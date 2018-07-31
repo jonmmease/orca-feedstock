@@ -1,0 +1,17 @@
+{% set version = "1.0.0" %}
+
+package:
+  name: plotly-orca
+  version: {{ version }}
+
+source:
+#  git_rev: v{{ version }}
+  git_rev: 8f3fc4b3bf7e994aa711ba40ab9ea3e24e1f2432  # With hide dock fix
+  git_url: https://github.com/plotly/orca.git
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - nodejs =8
