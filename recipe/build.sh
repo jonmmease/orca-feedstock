@@ -7,7 +7,8 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     # Mac OSX
     mv release/mac/orca.app $PREFIX/lib
 else
-    echo "Linux not implemented"
+    # Assume Linux
+    mv release/linux-unpacked/ $PREFIX/lib/orca_app
 fi
 
 mkdir -p $PREFIX/bin
